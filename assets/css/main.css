@@ -20,7 +20,12 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--secondary-color);
-  color: black;
+  color: var(--primary-color);
+  display: grid;
+    grid-template-rows: 1fr 3fr;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,9 +42,24 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 3fr;
     background-color: var(--background-color);
+    height: 100%;
+
 }
 
 .side-bar {
     background-color: var(--aside-color);
     padding: 2rem;
 }
+.side-bar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-bar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .side-bar nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
